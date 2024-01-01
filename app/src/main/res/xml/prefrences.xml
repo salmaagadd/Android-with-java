@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <PreferenceCategory
+            android:icon="@drawable/ic_baseline_message_24"
+            android:title="messages_header">
+
+            <CheckBoxPreference
+                android:title="Bluetooth"
+                android:key="sign"
+                android:icon="@drawable/ic_baseline_bluetooth_24"
+                />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="sync_header">
+
+            <SwitchPreferenceCompat
+                android:key="sync"
+                android:title="sync_title"
+                android:icon="@drawable/ic_baseline_sync_24"/>
+
+            <SwitchPreferenceCompat
+                android:dependency="sync"
+                android:key="attachment"
+                android:summaryOff="attachment_summary_off"
+                android:summaryOn="attachment_summary_on"
+                android:title="Share Application"
+                android:icon="@drawable/ic_baseline_mobile_screen_share_24"/>
+
+            <SwitchPreferenceCompat
+                android:key="awake"
+                android:title="stay awake"
+                android:icon="@drawable/ic_baseline_remove_red_eye_24"
+                android:summary="the screen will not shut down while charging"/>
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:icon="@drawable/ic_baseline_notifications_24"
+            android:title="Notifications">
+
+
+            <SwitchPreferenceCompat
+                android:key="notifications"
+                android:title="Disable notifications"
+                android:summaryOn="You will no longer receive any notifications"
+                android:summaryOff="You will receive all notifications"
+                android:icon="@drawable/ic_baseline_notifications_off_24"
+                />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="check_box_preference_1"
+                android:title="Do you accept terms and conditions"
+                android:icon="@drawable/ic_baseline_fact_check_24"/>
+        </PreferenceCategory>
+
+
+
+</PreferenceScreen>

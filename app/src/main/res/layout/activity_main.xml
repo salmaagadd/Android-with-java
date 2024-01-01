@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:text="Medical Consulting"
+                android:textAlignment="center"
+                android:textSize="80px"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="50px"
+                />
+
+            <EditText
+                android:id="@+id/editTextPersonName"
+                android:layout_width="324dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="324dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Age" />
+
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="324dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="Phone Number"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Male"
+                    android:textSize="40px"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Female"
+                    android:textSize="40px"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="278dp"
+                android:layout_height="66dp"
+                android:text="NEXT"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:onClick="onClick1"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
